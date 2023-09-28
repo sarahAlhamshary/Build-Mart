@@ -438,6 +438,10 @@ img, video {
   height: 66px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -460,6 +464,10 @@ img, video {
 
 .w-\[428px\] {
   width: 428px;
+}
+
+.w-\[429px\] {
+  width: 429px;
 }
 
 .w-\[461px\] {
@@ -570,6 +578,12 @@ img, video {
   margin-bottom: calc(18px * var(--tw-space-y-reverse));
 }
 
+.space-y-\[22px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(22px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(22px * var(--tw-space-y-reverse));
+}
+
 .space-y-\[33px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(33px * calc(1 - var(--tw-space-y-reverse)));
@@ -625,6 +639,11 @@ img, video {
   padding-right: .875rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -638,6 +657,11 @@ img, video {
 .px-\[31px\] {
   padding-left: 31px;
   padding-right: 31px;
+}
+
+.px-\[37px\] {
+  padding-left: 37px;
+  padding-right: 37px;
 }
 
 .px-\[95\.5px\] {
@@ -678,6 +702,11 @@ img, video {
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.py-\[26px\] {
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .py-\[60px\] {
@@ -762,6 +791,10 @@ img, video {
 
 .leading-\[48\.41px\] {
   line-height: 48.41px;
+}
+
+.leading-\[60\.51px\] {
+  line-height: 60.51px;
 }
 
 .leading-\[90px\] {
