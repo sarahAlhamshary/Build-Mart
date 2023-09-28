@@ -393,6 +393,11 @@ img, video {
   margin-right: -3.5rem;
 }
 
+.mx-\[4px\] {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -425,16 +430,16 @@ img, video {
   margin-bottom: 20px;
 }
 
+.mb-\[42px\] {
+  margin-bottom: 42px;
+}
+
 .mb-\[67px\] {
   margin-bottom: 67px;
 }
 
 .mb-\[74px\] {
   margin-bottom: 74px;
-}
-
-.mr-\[130px\] {
-  margin-right: 130px;
 }
 
 .mt-\[13px\] {
@@ -517,8 +522,16 @@ img, video {
   width: 50%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-40 {
   width: 10rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-\[120\%\] {
@@ -639,12 +652,6 @@ img, video {
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-2\.5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(.625rem * var(--tw-space-x-reverse));
@@ -675,6 +682,12 @@ img, video {
   margin-left: calc(21px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-\[28px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(28px * var(--tw-space-x-reverse));
+  margin-left: calc(28px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-\[44px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(44px * var(--tw-space-x-reverse));
@@ -691,6 +704,12 @@ img, video {
   --tw-space-x-reverse: 0;
   margin-right: calc(80px * var(--tw-space-x-reverse));
   margin-left: calc(80px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -822,12 +841,27 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-2\.5 {
-  padding: .625rem;
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.from-\[\#dbf0eb\] {
+  --tw-gradient-from: #dbf0eb var(--tw-gradient-from-position);
+  --tw-gradient-to: #dbf0eb00 var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-white {
+  --tw-gradient-to: #fff0 var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-\[\#dbf0eb\] {
+  --tw-gradient-to: #dbf0eb var(--tw-gradient-to-position);
+}
+
+.p-2\.5 {
+  padding: .625rem;
 }
 
 .px-2 {
@@ -848,11 +882,6 @@ img, video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-\[10px\] {
@@ -880,14 +909,14 @@ img, video {
   padding-right: 40px;
 }
 
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .px-\[86px\] {
   padding-left: 86px;
   padding-right: 86px;
-}
-
-.px-\[95\.5px\] {
-  padding-left: 95.5px;
-  padding-right: 95.5px;
 }
 
 .py-10 {
@@ -920,6 +949,11 @@ img, video {
   padding-bottom: 1.25rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -950,6 +984,11 @@ img, video {
   padding-bottom: 30px;
 }
 
+.py-\[40px\] {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -963,6 +1002,14 @@ img, video {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
 }
 
 .pb-\[61px\] {
@@ -1305,8 +1352,18 @@ img, video {
     width: 33.3333%;
   }
 
+  .md\:w-2\/3 {
+    width: 66.6667%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1329,6 +1386,15 @@ img, video {
 
   .md\:self-start {
     align-self: flex-start;
+  }
+
+  .md\:px-\[95\.5px\] {
+    padding-left: 95.5px;
+    padding-right: 95.5px;
+  }
+
+  .md\:pr-\[95\.5px\] {
+    padding-right: 95.5px;
   }
 
   .md\:text-left {
