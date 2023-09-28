@@ -393,16 +393,21 @@ img, video {
   margin-right: auto;
 }
 
+.my-\[130px\] {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
 .mb-\[74px\] {
   margin-bottom: 74px;
 }
 
 .mr-\[130px\] {
   margin-right: 130px;
-}
-
-.mt-\[130px\] {
-  margin-top: 130px;
 }
 
 .mt-\[30px\] {
@@ -419,6 +424,10 @@ img, video {
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[430px\] {
+  height: 430px;
 }
 
 .h-\[60px\] {
@@ -445,6 +454,10 @@ img, video {
   width: 331px;
 }
 
+.w-\[364px\] {
+  width: 364px;
+}
+
 .w-\[428px\] {
   width: 428px;
 }
@@ -469,6 +482,10 @@ img, video {
   flex-direction: column-reverse;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -479,6 +496,12 @@ img, video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
@@ -505,10 +528,22 @@ img, video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-\[113px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(113px * var(--tw-space-x-reverse));
+  margin-left: calc(113px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-\[21px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(21px * var(--tw-space-x-reverse));
   margin-left: calc(21px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[44px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(44px * var(--tw-space-x-reverse));
+  margin-left: calc(44px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-\[80px\] > :not([hidden]) ~ :not([hidden]) {
@@ -603,6 +638,11 @@ img, video {
 .px-\[31px\] {
   padding-left: 31px;
   padding-right: 31px;
+}
+
+.px-\[95\.5px\] {
+  padding-left: 95.5px;
+  padding-right: 95.5px;
 }
 
 .py-2\.5 {
@@ -801,8 +841,24 @@ img, video {
     width: 50%;
   }
 
+  .md\:w-1\/3 {
+    width: 33.3333%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:self-start {
